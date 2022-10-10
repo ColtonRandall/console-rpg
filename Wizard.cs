@@ -1,20 +1,19 @@
-﻿namespace rpg_game
+namespace rpg_game
 {
-    class Knight : Character
+    class Wizard : Character
     {
         private string name;
         private int health;
         private int baseDamage;
         
-        // Knight special attack
-        private int criticalStrike;
+        // Wizard special attack
+        private int magicSpellAttack;
 
-        public Knight(string name)
+        public Wizard(string name)
         {
             this.name = name;
             health = 100;
-            baseDamage = 50;
-            criticalStrike = 100;
+            baseDamage = 20;
         }
 
         public string GetName()
@@ -32,10 +31,10 @@
             return baseDamage;
         }
 
+        // Wizard special attack
         public int GetSpecialAttack()
         {
-            return criticalStrike;
+            return magicSpellAttack;
         }
     }
-    
 }

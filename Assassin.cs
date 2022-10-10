@@ -1,20 +1,20 @@
-﻿namespace rpg_game
+namespace rpg_game
 {
-    class Knight : Character
+    class Assassin : Character
     {
         private string name;
         private int health;
         private int baseDamage;
-        
-        // Knight special attack
-        private int criticalStrike;
 
-        public Knight(string name)
+        // Assassin special attack
+        private int sneakAttack;
+
+        public Assassin(string name)
         {
             this.name = name;
             health = 100;
-            baseDamage = 50;
-            criticalStrike = 100;
+            baseDamage = 35;
+            sneakAttack = 100;
         }
 
         public string GetName()
@@ -24,7 +24,7 @@
 
         public int GetHealth()
         {
-            return health;
+           return health;
         }
 
         public int GetBaseDamage()
@@ -32,10 +32,11 @@
             return baseDamage;
         }
 
+        
+        // Assassin special attack
         public int GetSpecialAttack()
         {
-            return criticalStrike;
+            return sneakAttack;
         }
     }
-    
-}
+    }

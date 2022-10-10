@@ -8,26 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Colton\\.nuget\\packages\\": {}
+    "/Users/colton.randall/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Colton\\OneDrive\\Programming\\Personal Projects\\rpg-game\\rpg-game.csproj",
+      "projectUniqueName": "/Users/colton.randall/code/Personal Development/console-rpg/rpg-game.csproj",
       "projectName": "rpg-game",
-      "projectPath": "C:\\Users\\Colton\\OneDrive\\Programming\\Personal Projects\\rpg-game\\rpg-game.csproj",
-      "packagesPath": "C:\\Users\\Colton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Colton\\OneDrive\\Programming\\Personal Projects\\rpg-game\\obj\\",
+      "projectPath": "/Users/colton.randall/code/Personal Development/console-rpg/rpg-game.csproj",
+      "packagesPath": "/Users/colton.randall/.nuget/packages/",
+      "outputPath": "/Users/colton.randall/code/Personal Development/console-rpg/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Colton\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/colton.randall/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
