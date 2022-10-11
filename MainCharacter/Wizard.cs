@@ -1,6 +1,6 @@
 namespace rpg_game
 {
-    class Wizard : Character
+    class Wizard : ICharacter
     {
         private string name;
         private int health;
@@ -14,6 +14,7 @@ namespace rpg_game
             this.name = name;
             health = 100;
             baseDamage = 20;
+            magicSpellAttack = 150;
         }
 
         public string GetName()
@@ -30,11 +31,19 @@ namespace rpg_game
         {
             return baseDamage;
         }
+        public void PrintStats()
+        {
+            Console.WriteLine("---Character stats---");
+            Console.WriteLine("Health: " + GetHealth());
+            Console.WriteLine("Base damage: " + GetBaseDamage());
+            Console.WriteLine("Magic spell attack: " + GetSpecialAttack());
+        }
 
         // Wizard special attack
         public int GetSpecialAttack()
         {
             return magicSpellAttack;
         }
+
     }
 }

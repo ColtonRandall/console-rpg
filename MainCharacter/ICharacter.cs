@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace rpg_game
 {
-    interface Character
+    interface ICharacter
     {
         public string GetName();
         public int GetHealth();
         public int GetBaseDamage();
         public int GetSpecialAttack();
+        public void PrintStats();
     }
 }

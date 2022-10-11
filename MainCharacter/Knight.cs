@@ -1,6 +1,6 @@
 ﻿namespace rpg_game
 {
-    class Knight : Character
+    class Knight : ICharacter
     {
         private string name;
         private int health;
@@ -32,10 +32,20 @@
             return baseDamage;
         }
 
+        public void PrintStats()
+        {
+            Console.WriteLine("---" + name + " stats---");
+            Console.WriteLine("Health: " + GetHealth());
+            Console.WriteLine("Base damage: " + GetBaseDamage());
+            Console.WriteLine("Critical strike: " + GetSpecialAttack());
+        }
+        
+        // Knight special attack
         public int GetSpecialAttack()
         {
             return criticalStrike;
         }
+
     }
     
 }

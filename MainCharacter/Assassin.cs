@@ -1,6 +1,6 @@
 namespace rpg_game
 {
-    class Assassin : Character
+    class Assassin : ICharacter
     {
         private string name;
         private int health;
@@ -14,7 +14,7 @@ namespace rpg_game
             this.name = name;
             health = 100;
             baseDamage = 35;
-            sneakAttack = 100;
+            sneakAttack = 130;
         }
 
         public string GetName()
@@ -32,11 +32,19 @@ namespace rpg_game
             return baseDamage;
         }
 
+        public void PrintStats()
+        {
+            Console.WriteLine("---Character stats---");
+            Console.WriteLine("Health: " + GetHealth());
+            Console.WriteLine("Base damage: " + GetBaseDamage());
+            Console.WriteLine("Sneak attack: " + GetSpecialAttack());;
+        }
         
         // Assassin special attack
         public int GetSpecialAttack()
         {
             return sneakAttack;
         }
+
     }
     }
