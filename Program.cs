@@ -7,7 +7,7 @@ namespace rpgGame
      * Considerations:
      * ✅ Player to choose a character 
      * ✅  Characters have different health and attack stats (interface?)
-     * [] Create enemies to fight (Interface?)
+     * [] Create enemies to fight (Interface? Zombie, Werewolf, Vampire, Witch)
      * [] Allow player to roll a dice (randomise 1-6)
      * [] Depending on the roll, the player will move forward, encounter an enemy, or stumble upon treasure
      * [] When facing an enemy, the player can either fight or run
