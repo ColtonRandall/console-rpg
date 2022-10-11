@@ -1,18 +1,18 @@
 namespace rpg_game.Enemies;
 
-public class Zombie : IEnemy
+public class Werewolf : IEnemy
 {
     private int health;
     private int baseDamage;
         
-    // Zombie special enemy attack
-    private int infectiousBite;
+    // Werewolf special enemy attack
+    private int violentMauling;
 
-    public Zombie()
+    public Werewolf()
     {
-        health = 50;
-        baseDamage = 30;
-        infectiousBite = 90;
+        health = 100;
+        baseDamage = 60;
+        violentMauling = 100;
     }
     
     public int GetHealth()
@@ -25,17 +25,18 @@ public class Zombie : IEnemy
         return baseDamage;
     }
     
+    // Werewolf special enemy attack
     public int GetSpecialEnemyAttack()
     {
-        return infectiousBite;
+        return violentMauling;
     }
     
     public void PrintStats()
     {
-        Console.WriteLine("---Zombie stats---");
+        Console.WriteLine("---Werewolf stats---");
         Console.WriteLine("Health: " + GetHealth());
         Console.WriteLine("Base damage: " + GetBaseDamage());
-        Console.WriteLine("Infectious bite: " + GetSpecialEnemyAttack());
+        Console.WriteLine("Violent mauling: " + GetSpecialEnemyAttack());
     }
     
 }

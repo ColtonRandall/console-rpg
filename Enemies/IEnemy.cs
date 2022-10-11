@@ -1,4 +1,4 @@
-namespace rpgGame.Enemies;
+namespace rpg_game.Enemies;
 
 public interface IEnemy
 {

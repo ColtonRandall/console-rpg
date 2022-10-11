@@ -1,18 +1,18 @@
 namespace rpg_game.Enemies;
 
-public class Zombie : IEnemy
+public class Witch : IEnemy
 {
     private int health;
     private int baseDamage;
         
-    // Zombie special enemy attack
-    private int infectiousBite;
+    // Witch special enemy attack
+    private int spellCast;
 
-    public Zombie()
+    public Witch()
     {
-        health = 50;
-        baseDamage = 30;
-        infectiousBite = 90;
+        health = 60;
+        baseDamage = 35;
+        spellCast = 80;
     }
     
     public int GetHealth()
@@ -25,9 +25,10 @@ public class Zombie : IEnemy
         return baseDamage;
     }
     
+    // Witch special enemy attack
     public int GetSpecialEnemyAttack()
     {
-        return infectiousBite;
+        return spellCast;
     }
     
     public void PrintStats()
@@ -35,7 +36,7 @@ public class Zombie : IEnemy
         Console.WriteLine("---Zombie stats---");
         Console.WriteLine("Health: " + GetHealth());
         Console.WriteLine("Base damage: " + GetBaseDamage());
-        Console.WriteLine("Infectious bite: " + GetSpecialEnemyAttack());
+        Console.WriteLine("Witch's Spell Cast: " + GetSpecialEnemyAttack());
     }
     
 }

@@ -1,4 +1,4 @@
-namespace rpg_game
+namespace rpg_game.MainCharacter
 {
     class Wizard : ICharacter
     {

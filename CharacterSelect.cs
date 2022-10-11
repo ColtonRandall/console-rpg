@@ -1,4 +1,5 @@
 using rpg_game;
+using rpg_game.MainCharacter;
 
 namespace rpgGame;
 

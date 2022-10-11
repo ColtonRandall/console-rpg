@@ -1,18 +1,18 @@
 namespace rpg_game.Enemies;
 
-public class Zombie : IEnemy
+public class Vampire : IEnemy
 {
     private int health;
     private int baseDamage;
         
-    // Zombie special enemy attack
-    private int infectiousBite;
+    // Vampire special enemy attack
+    private int bloodDrain;
 
-    public Zombie()
+    public Vampire()
     {
         health = 50;
-        baseDamage = 30;
-        infectiousBite = 90;
+        baseDamage = 40;
+        bloodDrain = 75;
     }
     
     public int GetHealth()
@@ -25,17 +25,18 @@ public class Zombie : IEnemy
         return baseDamage;
     }
     
+    // Vampire special enemy attack
     public int GetSpecialEnemyAttack()
     {
-        return infectiousBite;
+        return bloodDrain;
     }
     
     public void PrintStats()
     {
-        Console.WriteLine("---Zombie stats---");
+        Console.WriteLine("---Vampire stats---");
         Console.WriteLine("Health: " + GetHealth());
         Console.WriteLine("Base damage: " + GetBaseDamage());
-        Console.WriteLine("Infectious bite: " + GetSpecialEnemyAttack());
+        Console.WriteLine("Blood drain attack: " + GetSpecialEnemyAttack());
     }
     
 }
