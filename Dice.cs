@@ -22,6 +22,7 @@ public class Dice
             {
                 Console.WriteLine("🎲 You rolled a " + playerRoll);
                 return playerRoll;
+                
             }
         }
     }

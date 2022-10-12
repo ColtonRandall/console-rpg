@@ -1,47 +1,20 @@
 ﻿namespace rpg_game
 {
-    class Knight : ICharacter
+    class Knight : Character
     {
-        private string name;
-        private int health;
-        private int baseDamage;
         
         // Knight special attack
         private int criticalStrike;
-
-        public Knight(string name)
+        
+        // Parameterless Constructor must provide
+        public Knight(string name) : base(name, 100, 50, "Knight")
         {
-            this.name = name;
-            health = 100;
-            baseDamage = 50;
             criticalStrike = 100;
         }
 
-        public string GetName()
-        {
-            return name;
-        }
-
-        public int GetHealth()
-        {
-            return health;
-        }
-
-        public int GetBaseDamage()
-        {
-            return baseDamage;
-        }
-
-        public void PrintStats()
-        {
-            Console.WriteLine("---" + name + " stats---");
-            Console.WriteLine("Health: " + GetHealth());
-            Console.WriteLine("Base damage: " + GetBaseDamage());
-            Console.WriteLine("Critical strike: " + GetSpecialAttack());
-        }
         
         // Knight special attack
-        public int GetSpecialAttack()
+        public override int GetSpecialAttack()
         {
             return criticalStrike;
         }

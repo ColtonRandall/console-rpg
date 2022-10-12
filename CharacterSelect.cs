@@ -6,6 +6,15 @@ namespace rpgGame;
 public class CharacterSelect
 {
 
+    private readonly CharacterFactory _characterFactory;
+
+    public CharacterSelect(CharacterFactory characterFactory)
+    {
+        _characterFactory = characterFactory;
+    }
+    
+    
+
     public void CreateCharacter()
     {
         Console.WriteLine("Welcome to the game, please choose your character: ");
@@ -16,32 +25,15 @@ public class CharacterSelect
         int characterSelect = Convert.ToInt32(Console.ReadLine());
             
         Console.WriteLine("What is your character's name? ");
-            
+
         string name = Console.ReadLine();
 
-        if (characterSelect == 1)
-        {
-            Knight knight = new Knight(name);
-            Console.WriteLine("Hello " + name + ". You have chosen to be a Knight! 🗡\n");
+        var character = _characterFactory.CreateCharacter(characterSelect, name);
 
-            knight.PrintStats();
-        }
+        Console.WriteLine($@"Hello {character.GetName()}. You have chosen to be a {character.GetCharacterType()} \n");
 
-        if (characterSelect == 2)
-        {
-            Assassin assassin = new Assassin(name);
-            Console.WriteLine("Hello " + name + ". You have chosen to be an Assassin! 🥷\n");
+        character.PrintStats();
 
-            assassin.PrintStats();
-        }
-
-        if (characterSelect == 3)
-        {
-            Wizard wizard = new Wizard(name);
-            Console.WriteLine("Hello " + name + ". You have chosen to be a Wizard! 🧙🪄\n");
-
-            wizard.PrintStats();
-        }
     }
     
 }

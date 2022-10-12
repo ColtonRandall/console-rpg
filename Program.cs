@@ -15,7 +15,7 @@ namespace rpg_game
      * [] Fighting an enemy, determine IF the player or enemy successfully hits the other, and how much damage they deal/take.
      * [] Determine if a critical/special attack was performed
      * [] Defeating an enemy = XP and chance of dropping a health potion
-     * 
+     *
      */
 
     class Program
@@ -23,7 +23,7 @@ namespace rpg_game
         static void Main(string[] args)
         {
             // Create a new character
-            var character = new CharacterSelect();
+            var character = new CharacterSelect(new CharacterFactory()); // Inversion of control - giving CharacterSelect a CharacterFactory to use. Instead of being dependent on which factory. 
             character.CreateCharacter();
 
             // Create a new Zombie enemy
@@ -34,6 +34,9 @@ namespace rpg_game
             // Roll the dice to start the game
             var dice = new Dice();
             dice.RollDice();
+
+            var logic = new GameLogic();
+            logic.PlayerTurn(dice);
         }
     }
 }
