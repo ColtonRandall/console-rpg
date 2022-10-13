@@ -6,13 +6,15 @@ public abstract class Character
     protected int health;
     protected int baseDamage;
     protected string type;
+    private string specialAttack;
 
-    public Character(string name, int health, int baseDamage, string type)
+    public Character(string name, int health, int baseDamage, string type, string specialAttack)
     {
         this.name = name;
         this.health = health;
         this.baseDamage = baseDamage;
         this.type = type;
+        this.specialAttack = specialAttack;
     }
     
     public string GetName()
@@ -39,10 +41,10 @@ public abstract class Character
 
     public void PrintStats()
     {
-        Console.WriteLine("--- " + name + " stats---");
+        Console.WriteLine($"--- {name} stats: ---");
         Console.WriteLine("Health: " + GetHealth());
         Console.WriteLine("Base damage: " + GetBaseDamage());
-        Console.WriteLine("Sneak attack: " + GetSpecialAttack());;
+        Console.WriteLine($"{specialAttack}: " + GetSpecialAttack());;
     }
 
 }

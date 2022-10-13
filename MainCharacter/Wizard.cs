@@ -6,7 +6,7 @@ namespace rpg_game.MainCharacter
         // Wizard special attack
         private int magicSpellAttack;
 
-        public Wizard(string name) : base(name, 30, 20, "Wizard")
+        public Wizard(string name) : base(name, 30, 20, "Wizard 🧙‍", "Magic Spell Attack")
         {
             magicSpellAttack = 150;
         }

@@ -6,13 +6,11 @@ namespace rpg_game
         // Assassin special attack
         private int sneakAttack;
 
-        public Assassin(string name) : base(name, 100, 35, "Assassin")
+        public Assassin(string name) : base(name, 100, 35, "Assassin 🥷", "Sneak Attack")
         {
             sneakAttack = 130;
         }
         
-
-
         
         // Assassin special attack
         public override int GetSpecialAttack()

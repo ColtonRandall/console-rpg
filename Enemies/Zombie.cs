@@ -1,41 +1,20 @@
 namespace rpg_game.Enemies;
 
-public class Zombie : IEnemy
+public class Zombie : Enemy
 {
-    private int health;
-    private int baseDamage;
+ 
         
     // Zombie special enemy attack
     private int infectiousBite;
 
-    public Zombie()
+    public Zombie() : base(50, 30, "Zombie 🧟‍")
     {
-        health = 50;
-        baseDamage = 30;
         infectiousBite = 90;
     }
-    
-    public int GetHealth()
-    {
-        return health;
-    }
 
-    public int GetBaseDamage()
-    {
-        return baseDamage;
-    }
-    
-    public int GetSpecialEnemyAttack()
+
+    public override int GetSpecialEnemyAttack()
     {
         return infectiousBite;
     }
-    
-    public void PrintStats()
-    {
-        Console.WriteLine("---Zombie stats---");
-        Console.WriteLine("Health: " + GetHealth());
-        Console.WriteLine("Base damage: " + GetBaseDamage());
-        Console.WriteLine("Infectious bite: " + GetSpecialEnemyAttack());
-    }
-    
 }

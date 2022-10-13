@@ -6,8 +6,8 @@
         // Knight special attack
         private int criticalStrike;
         
-        // Parameterless Constructor must provide
-        public Knight(string name) : base(name, 100, 50, "Knight")
+        // Parameterless Constructor
+        public Knight(string name) : base(name, 100, 50, "Knight 🗡", "Critical Strike")
         {
             criticalStrike = 100;
         }

@@ -30,7 +30,7 @@ public class CharacterSelect
 
         var character = _characterFactory.CreateCharacter(characterSelect, name);
 
-        Console.WriteLine($@"Hello {character.GetName()}. You have chosen to be a {character.GetCharacterType()} \n");
+        Console.WriteLine($@"Hello {character.GetName()}. You have chosen to be a {character.GetCharacterType()}" + "\n");
 
         character.PrintStats();
 
