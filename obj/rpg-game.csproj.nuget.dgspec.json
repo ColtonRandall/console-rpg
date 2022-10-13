@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/colton.randall/code/Personal Development/console-rpg/rpg-game.csproj": {}
+    "C:\\Users\\Colton\\OneDrive\\Programming\\Personal Projects\\rpg-game\\rpg-game.csproj": {}
   },
   "projects": {
-    "/Users/colton.randall/code/Personal Development/console-rpg/rpg-game.csproj": {
+    "C:\\Users\\Colton\\OneDrive\\Programming\\Personal Projects\\rpg-game\\rpg-game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/colton.randall/code/Personal Development/console-rpg/rpg-game.csproj",
+        "projectUniqueName": "C:\\Users\\Colton\\OneDrive\\Programming\\Personal Projects\\rpg-game\\rpg-game.csproj",
         "projectName": "rpg-game",
-        "projectPath": "/Users/colton.randall/code/Personal Development/console-rpg/rpg-game.csproj",
-        "packagesPath": "/Users/colton.randall/.nuget/packages/",
-        "outputPath": "/Users/colton.randall/code/Personal Development/console-rpg/obj/",
+        "projectPath": "C:\\Users\\Colton\\OneDrive\\Programming\\Personal Projects\\rpg-game\\rpg-game.csproj",
+        "packagesPath": "C:\\Users\\Colton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Colton\\OneDrive\\Programming\\Personal Projects\\rpg-game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/colton.randall/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Colton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

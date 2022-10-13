@@ -12,6 +12,11 @@ public class Zombie : Enemy
         infectiousBite = 90;
     }
 
+    public int ChanceOfZombie()
+    {
+        return null;
+    }
+
 
     public override int GetSpecialEnemyAttack()
     {
