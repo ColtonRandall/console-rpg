@@ -14,7 +14,10 @@ public class Zombie : Enemy
 
     public int ChanceOfZombie()
     {
-        return null;
+        var random = new Random();
+        int chanceOfZombieEncounter = random.Next(1, 10);
+        Console.WriteLine(chanceOfZombieEncounter);
+        return chanceOfZombieEncounter;
     }
 
 
